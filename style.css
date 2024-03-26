@@ -61,17 +61,14 @@ a {
 @keyframes fadeInOut {
     0% {
         opacity: 1;
-        /* Start met een opacity van 0 (volledig transparant) */
     }
 
     50% {
         opacity: 0;
-        /* Wordt langzaam zichtbaar tot 50% van de animatie */
     }
 
     100% {
         opacity: 1;
-        /* Eindigt met een opacity van 0 (volledig transparant) */
     }
 }
 
@@ -280,7 +277,6 @@ input[type='checkbox'] {
 /* ANIMATE LIQUID FILL */
 .animate-text {
     animation: tekst 5s;
-    /* Adjust the duration and other properties as needed */
 }
 
 .absoluut {
@@ -317,6 +313,10 @@ input[type='checkbox'] {
     text-align: center;
 }
 
+.textcontainer p {
+    margin: 20px 0;
+}
+
 .afronden {
     display: inline-block;
     font-weight: bold;
@@ -325,6 +325,7 @@ input[type='checkbox'] {
     font-size: 1.2;
     padding: 1rem 2.5rem;
     margin: 2rem;
+    border-radius: 8px;
 }
 
 .cls-1, .cls-3 {

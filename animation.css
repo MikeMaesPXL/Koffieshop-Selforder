@@ -22,11 +22,10 @@ p{
 
 /* ANIMATE LIQUID FILL */
 .liquid {
-   transform: translateX(100%);
    transform: translateY(100%);
    opacity: 0.8;
-   animation: fill 10s ease-out;
-   animation-fill-mode: forwards;
+   animation: fill 10s ease-out forwards;
+   will-change: transform;
 }
 
 @keyframes fill {
