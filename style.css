@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #262626;
+    overflow: hidden;
+}
+
+h1 {
+    letter-spacing: 1px;
+}
+
+p,
+a {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.absoluut {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    position: relative;
+}
+
+.fade {
+    animation: fadeInOut 5s infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        /* Start met een opacity van 0 (volledig transparant) */
+    }
+
+    50% {
+        opacity: 0;
+        /* Wordt langzaam zichtbaar tot 50% van de animatie */
+    }
+
+    100% {
+        opacity: 1;
+        /* Eindigt met een opacity van 0 (volledig transparant) */
+    }
+}
+
+.blink {
+    animation: blink .5s alternate;
+}
+
+@keyframes blink {
+
+    0%,
+    49%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.leftContainer {
+    width: 35%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightContainer {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.webContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #262626;
+    color: white;
+}
+
+.navContainer {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 75%;
+    border-left: 2px solid white;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 80vh;
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.navDiv {
+    display: flex;
+    align-items: center;
+}
+
+.navTitle {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.navImg {
+    width: 75%;
+    font-weight: normal;
+    margin: 20px 0;
+
+}
+
+.navImg:hover {
+    filter: brightness(1.5);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navText {
+    font-size: 24px;
+}
+
+.menuRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.menuItem {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem:hover .menuText {
+    transition: .2s ease-in-out;
+    transform: fade-up(1.5);
+}
+
+.menuImg {
+    transition: .2s ease-in-out;
+    width: 40%;
+}
+
+.menuImg:hover {
+    transition: .2s ease-in-out;
+    transform: fade-up(1.2);
+    filter: brightness(1.2);
+}
+
+
+
+.menuText {
+    transition: .2s ease-in-out;
+    font-size: 18px;
+}
+
+.active {
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.Image {
+    width: 70%;
+}
+
+.testerButton {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-variant-caps: all-small-caps;
+    width: 250px;
+    height: 50px;
+    background-color: #c4a181;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 0;
+}
+
+.checkboxTitle {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.checkbox {
+    margin: 5px 0;
+}
+
+input.checkboxInput {
+    transform: fade-up(1.5);
+    margin: 10px;
+}
+
+.checkboxLabel {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+input[type='checkbox'] {
+    accent-color: #c4a181;
+}
+
+/* ANIMATE LIQUID FILL */
+.animate-text {
+    animation: tekst 5s;
+    /* Adjust the duration and other properties as needed */
+}
+
+.absoluut {
+    animation: tekst 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tekst {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.timer {
+    color: white;
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.textcontainer {
+    text-align: center;
+}
+
+.afronden {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #c4a181;
+    font-size: 1.2;
+    padding: 1rem 2.5rem;
+    margin: 2rem;
+}
+
+.cls-1, .cls-3 {
+    transform: translate(50px);
+    animation: moving 3s ease-in-out forwards;
+}
+
+@keyframes moving {
+    0% {
+        transform: translate(500px, 250px);
+    }
+    50% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
